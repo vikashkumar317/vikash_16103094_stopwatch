@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<title>Stopwatch</title>
+	<style>
+	#container
+			{
+			margin-left: auto;
+			margin-right: auto;
+			max-width:150px;
+			margin-top: 20px;
+			border: 1px solid white;
+			}
+	.btn
+			{
+			width :150px;
+			height: 40px;
+			border: 2px solid black;
+			/* margin:top right=left bottom*/
+			margin:0px 0px 20px;
+			background-color:#FAFAFA;
+			font-size:30px;
+			}
+	</style>
+	<script src="sw.js"></script>
+</head>
+<body onload="show()">
+	<div align="center" style="font-weight:bold; font-size:40px; color:black;">Time: 
+	<span id="time" style="font-weight:bold; font-size:40px; color:blue;"></span></div>
+    <div id="container">
+	<button class="btn" style="color:#145A32; background-color:#D5DBDB;" onclick="start()"><b id="start">start</b></button><br>
+
+	<input type="button" class="btn" style="color:#F1C40f; background-color:#D5DBDB;" value="pause" onclick="stop()"><br>
+	<input type="button" class="btn" style="color:#E67E22; background-color:#D5DBDB;" value="reset"  onclick="reset()">
+	<input type="button" class="btn" style="color:blue; background-color:#D5DBDB;" value="lap" onclick="lap()">
+	<p id="a" style="color:#8E44AD; font-size:22px;"></p>
+	<p id="b" style="color:#8E44AD; font-size:22px;"></p>
+	<p id="c" style="color:#8E44AD; font-size:22px;"></p>
+	<p id="d" style="color:#8E44AD; font-size:22px;"></p>
+	<p id="e" style="color:#8E44AD; font-size:22px;"></p><br>
+	</div>
+	<marquee width="100%" style="font-size:25px; color:pink;" direction="right" ><b>VIKASH KUMAR</b></marquee>
+</body>
+</html>
